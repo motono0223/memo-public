@@ -15,7 +15,11 @@ AWS EC2の`g4dn.xlarge`インスタンス（Ubuntu）で、GPUを利用可能な
 sudo apt update
 
 # NVIDIAドライバをインストール（バージョンは適宜変更される可能性があります）
-sudo apt install nvidia-driver-535 -y
+# sudo apt install nvidia-driver-535 -y
+
+# NVIDIAドライバの自動選択
+sudo ubuntu-drivers autoinstall
+
 # インストールが完了したら、OSを再起動します
 sudo reboot
 ```
